@@ -9,6 +9,42 @@
     "id": 2,
     "thumbnail": "/portfolio-screenshot/jago-investasi-landingpage.png",
     "title": "Jago-Investasi Website",
-    "desc": "Build a website Jago-Investasi"
+    "desc": "Build a Jago-Investasi website "
+  },
+  {
+    "id": 3,
+    "thumbnail": "/portfolio-screenshot/teknoka-landingpage.png",
+    "title": "Teknoka 8 Website",
+    "desc": "Maintain a Teknoka 8 website "
+  },
+  {
+    "id": 4,
+    "thumbnail": "/portfolio-screenshot/amazon-landingpage.png",
+    "title": "Amazon App",
+    "desc": "Build a Amazon website"
+  },
+  {
+    "id": 5,
+    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
+    "title": "Yoasobi Website",
+    "desc": "Build a Yoasobi website"
+  },
+  {
+    "id": 6,
+    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
+    "title": "Yoasobi Website",
+    "desc": "Build a Yoasobi website"
+  },
+  {
+    "id": 7,
+    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
+    "title": "Yoasobi Website",
+    "desc": "Build a Yoasobi website"
+  },
+  {
+    "id": 8,
+    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
+    "title": "Yoasobi Website",
+    "desc": "Build a Yoasobi website"
   }
 ]
