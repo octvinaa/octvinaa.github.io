@@ -6,8 +6,7 @@ import { AnimatePresence, delay, motion } from "framer-motion";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useState, useRef } from "react";
 import { PiCodeThin } from "react-icons/pi";
-import { GiPencilBrush } from "react-icons/gi";
-
+import { useEffect } from "react";
 type portfolioDataType = {
   id: number;
   thumbnail: string;
@@ -17,6 +16,7 @@ type portfolioDataType = {
 
 function Dashboard() {
   const { data, error, isLoading } = useSWR("/api/portfolio", (url) => fetch(url).then((res) => res.json()));
+
   const portfolioData: portfolioDataType[] = data?.data;
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
   const [hidden, setHidden] = useState<boolean>(true);
@@ -51,10 +51,11 @@ function Dashboard() {
       <div className="flex flex-col border-t-2 border-neutral-600 py-6">
         <motion.div
           layout
-          initial={{ height: "30rem", opacity: 0 }}
+          initial={{ height: "30rem", opacity: 0, overflow: "hidden" }}
           animate={{
             height: hidden ? "30rem" : "auto",
             opacity: 1,
+            overflow: "hidden",
           }}
           transition={{ duration: 0.5 }}
           onUpdate={(latest) => {
@@ -63,45 +64,41 @@ function Dashboard() {
             }
           }}
           onAnimationComplete={() => setIsAnimating(false)}
-          className={`flex flex-col w-full bg-[--component-color] rounded-md gap-3 ${hidden ? "overflow-hidden h-[30rem] " : "overflow-visible h-auto"}`}
+          className={`flex flex-col w-full bg-[--component-color] rounded-md  ${hidden ? "overflow-hidden h-[30rem] " : "h-auto"}`}
         >
           {/* Data */}
           {isLoading ? (
-            <div className="flex items-center gap-x-3 p-4 rounded-md">
-              <Skeleton className="h-[100px] w-[100px] rounded-md" />
-              <div className="flex flex-col">
-                <Skeleton className="w-28 rounded-md h-2" />
-                <Skeleton className="w-40 rounded-md h-2 mt-1" />
-                <Skeleton className="w-8 rounded-md h-2 mt-6" />
-              </div>
-            </div>
+            <AnimatePresence>
+              {Array.from({ length: 8 }).map((_, i) => (
+                <div key={i} className="flex items-center gap-x-3 p-4 rounded-md">
+                  <Skeleton className="h-[80px] w-[150px] rounded-md" />
+                  <div className="flex flex-col">
+                    <Skeleton className="w-28 rounded-md h-2" />
+                    <Skeleton className="w-40 rounded-md h-2 mt-1" />
+                    <Skeleton className="w-8 rounded-md h-2 mt-6" />
+                  </div>
+                </div>
+              ))}
+            </AnimatePresence>
           ) : (
             <AnimatePresence>
               {portfolioData.map((item) => (
-                <motion.div key={item.id} whileHover={{ backgroundColor: "#282828" }} className="flex items-center gap-x-3 p-4 rounded-md cursor-pointer">
-                  <Image src={item.thumbnail} alt="Portfolio" width={150} height={100} className="rounded-md w-[150px] object-contain " />
-                  <motion.div className="flex flex-col">
-                    <motion.span className="text-sm text-neutral-400">{item.title}</motion.span>
-                    <motion.span className="text-xs font-bold text-neutral-400">{item.desc}</motion.span>
-                    <motion.span className="text-xs text-neutral-300 font-bold text-start mt-3">
-                      <Link href="/dashboard/1">More</Link>
-                    </motion.span>
+                <Link key={item.id} href={`/dashboard/${item.id}`}>
+                  <motion.div whileHover={{ backgroundColor: "#282828" }} className="flex items-center gap-x-3 p-4 rounded-md cursor-pointer">
+                    <Image src={item.thumbnail} alt="Portfolio" width={150} height={100} className="rounded-md w-[175px] object-contain " />
+                    <motion.div className="flex flex-col">
+                      <motion.span className="text-sm text-neutral-400">{item.title}</motion.span>
+                      <motion.span className="text-xs font-bold text-neutral-400">{item.desc}</motion.span>
+                      <motion.span className="text-xs text-neutral-300 font-bold text-start mt-3">More</motion.span>
+                    </motion.div>
                   </motion.div>
-                </motion.div>
+                </Link>
               ))}
             </AnimatePresence>
           )}
           {error && <div>{error}</div>}
         </motion.div>
-        <motion.button
-          initial={{ opacity: 1 }}
-          animate={{ opacity: isAnimating ? 0 : 1 }}
-          exit={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          disabled={isAnimating}
-          className="text-xs text-neutral-300 font-bold text-center mt-3 cursor-pointer"
-          onClick={() => setHidden(!hidden)}
-        >
+        <motion.button transition={{ duration: 0.8 }} disabled={isAnimating} className="text-xs text-neutral-300 font-bold text-center mt-3 cursor-pointer" onClick={() => setHidden(!hidden)}>
           {hidden ? "Show More" : "Show Less"}
         </motion.button>
       </div>

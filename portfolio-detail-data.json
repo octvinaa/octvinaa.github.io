@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "companyPicture": "/company-logo/piljur.png",
+    "companyName": "PT.Pilihanmu Indonesia Jaya",
+    "date": "Feb 2024 - June 2024",
+    "desc": "As a Frontend Web Developer intern at 'Pilih Jurusan', I was responsible for developing the website's admin section with a focus on efficiency and high-quality implementation. My contributions included developing dynamic table components that supported CRUD operations, image display, data filtering, and search functionality to enable seamless data management. I accurately sliced and implemented responsive UI designs using Tailwind CSS, and utilized modern technologies like TypeScript, Next.js, Mockoon, and SWR to efficiently build features and manage API communications. I also implemented end-to-end testing using Cypress to ensure a bug-free user experience, while actively using Git and GitHub for version control and collaboration. This project greatly enhanced my technical skills, especially in building user-friendly and reliable web applications that adhere to modern development standards.",
+    "techstack": ["NextJS", "TypeScript", "TailwindCSS", "Embla Carousel", "SWR", "Zustand", "Cypress.io", "Github"],
+    "projectImage": ["/portfolio-screenshot/piljur-homepage.png", "/portfolio-screenshot/piljur-admin-page.png", "/portfolio-screenshot/piljur-testing.jpeg"]
+  },
+  {
+    "id": 2,
+    "companyName": "Gallery Investasi UHAMKA",
+    "companyPicture": "/company-logo/gallery-investasi.png",
+    "date": "May 2023 - June 2023",
+    "desc": "Jago-Investasi is an educational platform providing paid courses tailored for students of FEB UHAMKA. In this project, I served as the Front-End Developer, responsible for designing and optimizing the user interface to ensure a seamless and user-friendly experience. Additionally, I collaborated closely with the Back-End Developer, offering support in addressing technical challenges to facilitate smooth integration between the front-end and back-end systems.",
+    "techstack": ["Laravel", "Bootstrap", "JQuery", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/jago-investasi-landingpage.png"]
+  },
+  {
+    "id": 3,
+    "companyPicture": "/company-logo/ftii-uhamka.webp",
+    "companyName": "FTII UHAMKA",
+    "date": "June 2023 - Oct 2023",
+    "desc": "Teknoka 8 is a seminar website dedicated to facilitating the publication process of scientific papers, including journal submission and review functionalities. In this project, I served as the Front-End Developer responsible for maintaining the platform. My role involved regularly updating the website's content and assets to ensure the accuracy and relevance of information related to the seminar.",
+    "techstack": ["Codeigniter", "Bootstrap", "JQuery", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/teknoka-landingpage.png", "/portfolio-screenshot/teknoka-speakers-page.png"]
+  },
+  {
+    "id": 4,
+    "companyPicture": "/company-logo/default-logo.png",
+    "companyName": "Amazon App",
+    "desc": "The Amazon website is an e-commerce platform featuring beauty products. In this project, I worked as the Front-End Developer, utilizing the React JS framework to build a dynamic and responsive user interface. Additionally, I implemented animations using Framer Motion to enhance the overall user experience, creating smooth and engaging interactions throughout the site.",
+    "techstack": ["ReactJS", "TailwindCSS", "Framer Motion", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/amazon-landingpage.png", "/portfolio-screenshot/amazon-landingpage2.png", "/portfolio-screenshot/amazon-landingpage3.png"]
+  },
+  {
+    "id": 5,
+    "companyPicture": "/company-logo/dicoding.jpeg",
+    "companyName": "Yoasobi Website",
+    "desc": "The Yoasobi website is an article platform centered around the Yoasobi group. This website was developed as part of my submission for the Dicoding course 'Belajar Dasar Pemrograman Web.' The project demonstrates my proficiency in foundational web programming, showcasing skills in creating a functional and content-driven platform.",
+    "techstack": ["HTML5", "CSS", "Javascript", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/yoasobi-landingpage.png", "/portfolio-screenshot/yoasobi-landingpage2.png", "/portfolio-screenshot/yoasobi-landingpage3.png"]
+  },
+  {
+    "id": 6,
+    "companyPicture": "/company-logo/dicoding.jpeg",
+    "companyName": "Bookshelp App",
+    "desc": "The Bookshelf App is a web-based application created as part of my submission for the Dicoding course 'Belajar Membuat Front-End Web untuk Pemula.' The application includes comprehensive CRUD (create, read, update, and delete) functionalities, allowing users to manage a collection of books efficiently. This project demonstrates my ability to implement key front-end development principles, such as responsive design, interactive user interfaces, and seamless user experiences. Through this submission, I have showcased my proficiency in building functional, user-centered web applications while adhering to industry best practices.",
+    "techstack": ["HTML5", "CSS", "Javascript", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/bookshelf-page.png"]
+  },
+  {
+    "id": 7,
+    "companyPicture": "/company-logo/default-logo.png",
+    "companyName": "Staycation App",
+    "desc": "The Staycation website is a travel application where I transformed designs from BuildWithAngga into a fully functional web interface. In this project, I applied my front-end development skills to accurately implement detailed design specifications, resulting in a user-friendly and visually engaging platform. This experience underscores my ability to translate complex design concepts into interactive and responsive websites, adhering to modern web development standards and best practices.",
+    "techstack": ["HTML5", "CSS", "Javascript", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/staycation-landingpage.png", "/portfolio-screenshot/staycation-landingpage2.png", "/portfolio-screenshot/staycation-landingpage3.png"]
+  },
+  {
+    "id": 8,
+    "companyPicture": "/company-logo/default-logo.png",
+    "companyName": "Collosal App",
+    "desc": "Collosal is a website I developed as part of my practice to enhance my proficiency in React JS. The design was sourced from 'codedesign.dev' and implemented into a fully functional front-end website. This project allowed me to refine my skills in React JS by translating modern design elements into a responsive and dynamic user interface, demonstrating my ability to work with complex front-end frameworks while adhering to design standards.",
+    "techstack": ["ReactJS", "TailwindCSS", "Framer Motion", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/collosal-landingpage.png", "/portfolio-screenshot/collosal-landingpage2.png", "/portfolio-screenshot/collosal-landingpage3.png"]
+  },
+  {
+    "id": 9,
+    "companyPicture": "/company-logo/default-logo.png",
+    "companyName": "Mangaku App",
+    "desc": "The Mangaku website was developed as part of my submission for the Dicoding course 'Fundamental Front-End Web Development.' This project provided an opportunity to delve deeply into web bundling techniques, with a particular focus on Webpack. Throughout the course, I acquired a comprehensive understanding of how to manage and optimize various web assets, which I effectively applied to the Mangaku website. The project involved integrating complex front-end functionalities and optimizing the build process to enhance performance and efficiency. By utilizing Webpack, I was able to streamline asset management and improve the overall user experience. This project not only demonstrates my technical skills in web development but also showcases my ability to apply advanced techniques to create a robust and high-performing website.",
+    "techstack": ["HTML5", "CSS", "Javascript", "Bootstrap", "JQuery", "Webpack", "Git", "Github"],
+    "projectImage": ["/portfolio-screenshot/mangaku-landingpage.png", "/portfolio-screenshot/mangaku-landingpage2.png"]
+  }
+]

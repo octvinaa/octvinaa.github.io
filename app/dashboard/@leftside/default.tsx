@@ -115,7 +115,7 @@ function Leftside() {
       <div className="flex flex-col gap-y-4">
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, i) => (
-            <span key={i} className="bg-[var(--bg-color-secondary)] flex-auto font-bold text-[10px] text-center py-1 px-2 text-neutral-300 rounded-lg">
+            <span key={i} className="bg-[var(--bg-color-secondary)] font-bold text-[10px] w-max text-center py-1 px-2 text-neutral-300 rounded-lg">
               {skill}
             </span>
           ))}

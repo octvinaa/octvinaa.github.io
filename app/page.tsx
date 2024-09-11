@@ -12,15 +12,15 @@ export default function Home() {
       <p className="text-neutral-300 text-center mt-3 md:max-w-md lg:max-w-lg">Welcome to my portfolio website! This site is built using Next.js, TypeScript, Tailwind CSS, and Framer Motion.</p>
 
       <div className="flex justify-center gap-x-5 fixed bottom-20">
-        <div className="border border-neutral-600 rounded-lg p-2 text-neutral-600">
+        <div className="border border-neutral-400 rounded-lg p-2 text-neutral-400">
           <Link href={"/dashboard"}>
             <span>
               <PiHouseLight />
             </span>
           </Link>
         </div>
-        <div className="border border-neutral-600 rounded-lg p-2 text-neutral-600">
-          <Link href={"/dashboard"}>
+        <div className="border border-neutral-400 rounded-lg p-2 text-neutral-400">
+          <Link href={"https://github.com/rifqiFavian463"} target={"_blank"}>
             <span>
               <PiGithubLogoLight />
             </span>

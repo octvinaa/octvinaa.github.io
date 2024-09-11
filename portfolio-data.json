@@ -31,20 +31,26 @@
   },
   {
     "id": 6,
-    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
-    "title": "Yoasobi Website",
-    "desc": "Build a Yoasobi website"
+    "thumbnail": "/portfolio-screenshot/bookshelf-page.png",
+    "title": "Bookshelf App",
+    "desc": "Build a Bookshelf website"
   },
   {
     "id": 7,
-    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
-    "title": "Yoasobi Website",
-    "desc": "Build a Yoasobi website"
+    "thumbnail": "/portfolio-screenshot/staycation-landingpage.png",
+    "title": "Staycation Website",
+    "desc": "Build a Staycation website"
   },
   {
     "id": 8,
-    "thumbnail": "/portfolio-screenshot/yoasobi-landingpage.png",
-    "title": "Yoasobi Website",
-    "desc": "Build a Yoasobi website"
+    "thumbnail": "/portfolio-screenshot/collosal-landingpage.png",
+    "title": "Collosal Website",
+    "desc": "Build a Collosal website"
+  },
+  {
+    "id": 9,
+    "thumbnail": "/portfolio-screenshot/mangaku-landingpage.png",
+    "title": "Mangaku Website",
+    "desc": "Build a Mangaku website"
   }
 ]
