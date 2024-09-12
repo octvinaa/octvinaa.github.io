@@ -102,7 +102,7 @@ function Rightside() {
           </Link>
         </div>
         <button type="button" className="bg-[#696969] text-xs text-neutral-50 h-7 w-full rounded-md">
-          <a href="" download={""}>
+          <a href="/CV-Rifqi-Favian-H.pdf" download={"CV Rifqi Favian Hibatullah.pdf"}>
             Download
           </a>
         </button>
