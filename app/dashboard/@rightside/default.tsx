@@ -91,7 +91,7 @@ function Rightside() {
           stiffness: 200,
         },
       }}
-      className="flex flex-col sticky md:top-5 justify-center gap-4  w-full md:min-w-44 md:max-w-fit "
+      className="flex flex-col md:hidden lg:block sticky md:top-5 justify-center gap-4  w-full md:min-w-44 md:max-w-fit "
     >
       {/* CV Download */}
       <div className="flex flex-col gap-4 rounded-lg p-6 bg-[var(--component-color)] border border-neutral-800">
