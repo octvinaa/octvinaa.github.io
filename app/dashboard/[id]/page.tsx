@@ -24,7 +24,7 @@ function Detail({ params }: { params: { id: string } }) {
   const [hidden, setHidden] = useState<boolean>(true);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
-  const { data, error, isLoading } = useSWR(`/api/portfolio/${id}`, (url) => fetch(url).then((res) => res.json()));
+  const { data, isLoading } = useSWR(`/api/portfolio/${id}`, (url) => fetch(url).then((res) => res.json()));
   const detailPortfolio: detailPortfolioType = data?.data;
   return (
     <div className="w-full md:max-w-fit flex flex-col gap-3 lg:w-[32rem]">
