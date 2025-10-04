@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {output: "export", // Enables static exports
 reactStrictMode: true, eslint:{ignoreDuringBuilds: true}, images: { unoptimized: true },
-  basePath: "/nama-repo-kamu",
-  assetPrefix: "/nama-repo-kamu/",};
+  basePath: "/octvinaa.github.io",
+  assetPrefix: "/octvinaa.github.io/",};
 
 export default nextConfig;
