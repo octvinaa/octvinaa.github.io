@@ -19,49 +19,33 @@ type socialType = {
 const skills: string[] = [
   "HTML",
   "CSS",
-  "Tailwind CSS",
-  "SASS",
-  "Bootstrap",
   "Javascript",
-  "TypeScript",
-  "JQuery",
-  "React JS",
+  "Figma",
   "Next.js",
-  "Framer Motion",
-  "Mockoon",
-  "Cypress.io",
-  "Git",
-  "GitHub",
-  "Clip Studio Paint",
+  "Canva",
+  "Miro",
 ];
 const social: socialType[] = [
   {
     id: 1,
     name: "Instagram",
-    position: "www.instagram.com/rifqiifh_",
-    link: "https://www.instagram.com/rifqiifh_",
+    position: "www.instagram.com/vinaoctv",
+    link: "https://www.instagram.com/vinaoctv",
     image: <CiInstagram className="text-lg text-neutral-300" />,
   },
   {
     id: 2,
     name: "LinkedIn",
-    position: "www.Linkedin.com/rifqifavianh",
-    link: "https://www.linkedin.com/in/rifqifavianh/",
+    position: "www.Linkedin.com/vinaoctv",
+    link: "https://www.linkedin.com/in/vinaoctv/",
     image: <CiLinkedin className="text-lg text-neutral-300" />,
   },
   {
     id: 3,
     name: "Github",
-    position: "www.github.com/rifqiFavian463",
+    position: "www.github.com/octvinaa",
     image: <FaGithub className="text-lg text-neutral-300" />,
-    link: "https://github.com/rifqiFavian463",
-  },
-  {
-    id: 4,
-    name: "Twitter",
-    position: "www.x.com/okuta_ko",
-    image: <FaXTwitter className="text-lg text-neutral-300" />,
-    link: "https://x.com/okuta_ko",
+    link: "https://github.com/octvinaa",
   },
 ];
 
@@ -106,9 +90,9 @@ function Leftside() {
       </div>
       {/* About */}
       <div className="flex flex-col justify-center items-center md:items-start gap-3">
-        <span className="font-extrabold text-neutral-300 text-center md:text-start text-lg sm:text-xl">Rifqi Favian Hibatullah</span>
+        <span className="font-extrabold text-neutral-300 text-center md:text-start text-lg sm:text-xl">Vina Octaviani</span>
         <span className=" font-bold text-neutral-300 text-center md:text-start text-xs">
-          rifqifavianhibatullah@gmail.com <IoMailOutline className="inline-block" />
+          vinaoctaviani02@gmail.com <IoMailOutline className="inline-block" />
         </span>
       </div>
       {/* Skills */}
@@ -125,8 +109,8 @@ function Leftside() {
       <div className="flex flex-col gap-4">
         <span className="text-neutral-300 text-lg font-extrabold">Bio</span>
         <p className="text-neutral-300 text-xs">
-          Hi, Im Rifqi Favian Hibatullah. Im a Front-end Developer and 2D Artist, based in Indonesia. Im an active student currently studying at Muhammadiyah University Prof. dr Hamka, I have morethan
-          one year of experience in front-end development and 2D art.
+          Hi, I'm Vina Octaviani. I'm an UI/UX Designer, based in Indonesia. I'm a fresh graduate at Universitas Prima Indonesia, I have
+          one year of experience in UI/UX Design.
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-y-2 justify-between">
           <span className="text-neutral-300 text-xs font-semibold flex items-center gap-1 w-40">

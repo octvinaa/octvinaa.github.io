@@ -15,7 +15,7 @@ type certificationType = {
   title: string;
   company: string;
 
-  link: string;
+  link?: string;
 };
 
 const workHistory: workHistoryType[] = [
@@ -50,7 +50,6 @@ const certifcation: certificationType[] = [
     title: "Belajar Dasar Pemrograman Web",
 
     company: "Dicoding",
-    link: "https://www.dicoding.com/certificates/JMZV1474JXN9",
   },
   {
     title: "Belajar Fundamental Front-end Web Development",
@@ -98,11 +97,11 @@ function Rightside() {
         <span className="text-neutral-300 text-md font-extrabold">CV Download</span>
         <div className="flex max-w-80">
           <Link href={"/"} className="text-xs text-neutral-300 rounded-full max-w-72 ">
-            <p>Discover my front-end expertise. Download my CV to see how I can contribute to your projects!</p>
+            <p>Discover my UI/UX expertise. Download my CV to see how I can contribute to your projects!</p>
           </Link>
         </div>
         <button type="button" className="bg-[#696969] text-xs text-neutral-50 h-7 w-full rounded-md">
-          <a href="/CV-Rifqi-Favian-H.pdf" download={"CV Rifqi Favian Hibatullah.pdf"}>
+          <a href="/CV-Rifqi-Favian-H.pdf" download={"CV Vina Octaviani.pdf"}>
             Download
           </a>
         </button>
@@ -131,7 +130,7 @@ function Rightside() {
         <div className="flex flex-col border-t-2 border-neutral-600 pt-4">
           <span className="text-neutral-400 text-base mb-2">Certification</span>
           {certifcation.map((certificate, i) => (
-            <Link key={i} href={certificate.link} target={"_blank"}>
+            <Link prefetch={false} key={i} href={certificate.link ?? "#"} target={"_blank"}>
               <motion.div whileHover={{ backgroundColor: "#282828" }} className="flex flex-col p-2 cursor-pointer rounded-md">
                 <div className="flex justify-between">
                   <div className="flex">
